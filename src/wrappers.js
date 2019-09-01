@@ -81,3 +81,24 @@ wrappers[".google.protobuf.Any"] = {
         return this.toObject(message, options);
     }
 };
+
+const googleValueTypeWrapper = {
+    fromObject(object) {
+        return this.fromObject({ value: object })
+    },
+
+    toObject(message, options) {
+        const object = this.toObject(message, options);
+        return object && object.value
+    }
+};
+
+wrappers['.google.protobuf.BoolValue'] = googleValueTypeWrapper;
+wrappers['.google.protobuf.BytesValue'] = googleValueTypeWrapper;
+wrappers['.google.protobuf.DoubleValue'] = googleValueTypeWrapper;
+wrappers['.google.protobuf.FloatValue'] = googleValueTypeWrapper;
+wrappers['.google.protobuf.Int32Value'] = googleValueTypeWrapper;
+wrappers['.google.protobuf.Int64Value'] = googleValueTypeWrapper;
+wrappers['.google.protobuf.StringValue'] = googleValueTypeWrapper;
+wrappers['.google.protobuf.UInt64Value'] = googleValueTypeWrapper;
+wrappers['.google.protobuf.UInt32Value'] = googleValueTypeWrapper;
