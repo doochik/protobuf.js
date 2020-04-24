@@ -655,7 +655,10 @@ Translates between file formats and generates static code.
 
   --force-long     Enforces the use of 'Long' for s-/u-/int64 and s-/fixed64 fields.
   --force-number   Enforces the use of 'number' for s-/u-/int64 and s-/fixed64 fields.
+  --force-string   Enfores the use of 'string' for s-/u-/int64 and s-/fixed64 fields.",
+
   --force-message  Enforces the use of message instances instead of plain objects.
+
 
 usage: pbjs [options] file1.proto file2.json ...  (or pipe)  other | pbjs [options] -
 ```
