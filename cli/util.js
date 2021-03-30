@@ -7,8 +7,8 @@ var semver;
 
 try {
     // installed as a peer dependency
-    require.resolve("protobufjs");
-    exports.pathToProtobufJs = "protobufjs";
+    require.resolve("@vertis/protobufjs");
+    exports.pathToProtobufJs = "@vertis/protobufjs";
 } catch (e) {
     // local development, i.e. forked from github
     exports.pathToProtobufJs = "..";

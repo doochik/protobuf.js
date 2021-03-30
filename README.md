@@ -57,7 +57,7 @@ $> npm install protobufjs [--save --save-prefix=~]
 ```
 
 ```js
-var protobuf = require("protobufjs");
+var protobuf = require("@vertis/protobufjs");
 ```
 
 **Note** that this library's versioning scheme is not semver-compatible for historical reasons. For guaranteed backward compatibility, always depend on `~6.A.B` instead of `^6.A.B` (hence the `--save-prefix` above).
